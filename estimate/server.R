@@ -98,45 +98,45 @@ shinyServer(function(input, output, session){
   
   output$text_calTotal <-  renderText({ 
     paste("Total Example 1 Estimate =", round(  (
-    (1/(((vals$p_protocol/100)/vals$protocol_LB) + ((1-(vals$p_protocol/100))/vals$protocol_UB)))
-   +(1/(((vals$p_data/100)/vals$data_LB) + ((1-(vals$p_data/100))/vals$data_UB)))
-   +(1/(((vals$p_random/100)/vals$random_LB) + ((1-(vals$p_random/100))/vals$random_UB)))
-   +vals$newReport
-   +(vals$reports*vals$r_reports)
-   +vals$newDSMB
-   +(vals$DSMB*vals$r_DSMB)
-   +(1/(((vals$p_stand/100)/vals$stand_LB) + ((1-(vals$p_stand/100))/vals$stand_UB)))
-   +(1/(((vals$p_prep/100)/vals$prep_LB) + ((1-(vals$p_prep/100))/vals$prep_UB)))
-   +(1/(((vals$p_table/100)/vals$table_LB) + ((1-(vals$p_table/100))/vals$table_UB)))
-   +(1/(((vals$p_paper/100)/vals$paper_LB) + ((1-(vals$p_paper/100))/vals$paper_UB)))
-   +(1/(((vals$p_adv/100)/vals$adv_LB) + ((1-(vals$p_adv/100))/vals$adv_UB)))
-   +vals$misc), digits = 2), "hours" ) 
+      (1/(((vals$p_protocol/100)/vals$protocol_LB) + ((1-(vals$p_protocol/100))/vals$protocol_UB)))
+      +(1/(((vals$p_data/100)/vals$data_LB) + ((1-(vals$p_data/100))/vals$data_UB)))
+      +(1/(((vals$p_random/100)/vals$random_LB) + ((1-(vals$p_random/100))/vals$random_UB)))
+      +vals$newReport
+      +(vals$reports*vals$r_reports)
+      +vals$newDSMB
+      +(vals$DSMB*vals$r_DSMB)
+      +(1/(((vals$p_stand/100)/vals$stand_LB) + ((1-(vals$p_stand/100))/vals$stand_UB)))
+      +(1/(((vals$p_prep/100)/vals$prep_LB) + ((1-(vals$p_prep/100))/vals$prep_UB)))
+      +(1/(((vals$p_table/100)/vals$table_LB) + ((1-(vals$p_table/100))/vals$table_UB)))
+      +(1/(((vals$p_paper/100)/vals$paper_LB) + ((1-(vals$p_paper/100))/vals$paper_UB)))
+      +(1/(((vals$p_adv/100)/vals$adv_LB) + ((1-(vals$p_adv/100))/vals$adv_UB)))
+      +vals$misc), digits = 2), "hours" ) 
     
   })
   
   #Example 2
   output$MetaTotal <- renderText({
     paste("Total Example 2 estimate =", round(  (
-        (1/(((vals$p_M1/100)/vals$M1_LB) + ((1-(vals$p_M1/100))/vals$M1_UB)))  
-       +(1/(((vals$p_M2/100)/vals$M2_LB) + ((1-(vals$p_M2/100))/vals$M2_UB)))
-       +(1/(((vals$p_M3/100)/vals$M3_LB) + ((1-(vals$p_M3/100))/vals$M3_UB)))
-       +(1/(((vals$p_M4/100)/vals$M4_LB) + ((1-(vals$p_M4/100))/vals$M4_UB)))
-       +(1/(((vals$p_M5/100)/vals$M5_LB) + ((1-(vals$p_M5/100))/vals$M5_UB)))
-       +(1/(((vals$p_M6/100)/vals$M6_LB) + ((1-(vals$p_M6/100))/vals$M6_UB)))
-       +(1/(((vals$p_M7/100)/vals$M7_LB) + ((1-(vals$p_M7/100))/vals$M7_UB)))
-       +(1/(((vals$p_M8/100)/vals$M8_LB) + ((1-(vals$p_M8/100))/vals$M8_UB)))
-       +(1/(((vals$p_M9/100)/vals$M9_LB) + ((1-(vals$p_M9/100))/vals$M9_UB)))
-       +(1/(((vals$p_M10/100)/vals$M10_LB) + ((1-(vals$p_M10/100))/vals$M10_UB)))
-       +(1/(((vals$p_M11/100)/vals$M11_LB) + ((1-(vals$p_M11/100))/vals$M11_UB)))
-       +(1/(((vals$p_M12/100)/vals$M12_LB) + ((1-(vals$p_M12/100))/vals$M12_UB)))
-       +(1/(((vals$p_M13/100)/vals$M13_LB) + ((1-(vals$p_M13/100))/vals$M13_UB)))
-       +(1/(((vals$p_M14/100)/vals$M14_LB) + ((1-(vals$p_M14/100))/vals$M14_UB)))
-       +(1/(((vals$p_M15/100)/vals$M15_LB) + ((1-(vals$p_M15/100))/vals$M15_UB)))
-       +(1/(((vals$p_M16/100)/vals$M16_LB) + ((1-(vals$p_M16/100))/vals$M16_UB)))
-       +vals$M17+(vals$M18*vals$r_M18)+vals$M19), digits = 2), "hours" )  
-      
- 
-     })
+      (1/(((vals$p_M1/100)/vals$M1_LB) + ((1-(vals$p_M1/100))/vals$M1_UB)))  
+      +(1/(((vals$p_M2/100)/vals$M2_LB) + ((1-(vals$p_M2/100))/vals$M2_UB)))
+      +(1/(((vals$p_M3/100)/vals$M3_LB) + ((1-(vals$p_M3/100))/vals$M3_UB)))
+      +(1/(((vals$p_M4/100)/vals$M4_LB) + ((1-(vals$p_M4/100))/vals$M4_UB)))
+      +(1/(((vals$p_M5/100)/vals$M5_LB) + ((1-(vals$p_M5/100))/vals$M5_UB)))
+      +(1/(((vals$p_M6/100)/vals$M6_LB) + ((1-(vals$p_M6/100))/vals$M6_UB)))
+      +(1/(((vals$p_M7/100)/vals$M7_LB) + ((1-(vals$p_M7/100))/vals$M7_UB)))
+      +(1/(((vals$p_M8/100)/vals$M8_LB) + ((1-(vals$p_M8/100))/vals$M8_UB)))
+      +(1/(((vals$p_M9/100)/vals$M9_LB) + ((1-(vals$p_M9/100))/vals$M9_UB)))
+      +(1/(((vals$p_M10/100)/vals$M10_LB) + ((1-(vals$p_M10/100))/vals$M10_UB)))
+      +(1/(((vals$p_M11/100)/vals$M11_LB) + ((1-(vals$p_M11/100))/vals$M11_UB)))
+      +(1/(((vals$p_M12/100)/vals$M12_LB) + ((1-(vals$p_M12/100))/vals$M12_UB)))
+      +(1/(((vals$p_M13/100)/vals$M13_LB) + ((1-(vals$p_M13/100))/vals$M13_UB)))
+      +(1/(((vals$p_M14/100)/vals$M14_LB) + ((1-(vals$p_M14/100))/vals$M14_UB)))
+      +(1/(((vals$p_M15/100)/vals$M15_LB) + ((1-(vals$p_M15/100))/vals$M15_UB)))
+      +(1/(((vals$p_M16/100)/vals$M16_LB) + ((1-(vals$p_M16/100))/vals$M16_UB)))
+      +vals$M17+(vals$M18*vals$r_M18)+vals$M19), digits = 2), "hours" )  
+    
+    
+  })
   
   # calculate the estimated workload in hours per week
   output$estimatedworkload <- renderText({
@@ -186,5 +186,27 @@ shinyServer(function(input, output, session){
       as.numeric(input$referentialintegrity), as.numeric(input$draftrevise), as.numeric(input$validationmethods)
     ], "hours per variable")
   })
+  
+  
+  # an array giving data to use on pages per hour according to difficulty, purpose, and density
+  queryrate <- array(
+    data<-c(67,47, 33, 33, 24, 17, 17, 12, 9, 50, 35, 25, 25, 18, 13, 13, 9, 7, 40, 28, 20, 20, 14, 10, 10, 7, 5), 
+    dim=c(3,3,3),
+    dimnames = list(c("No New Concepts","Some New Concepts","Many New Concepts"), 
+                    c("Survey","Learn","Engage"),
+                    c("450 Words (Paperback)","600 Words (Monograph)","750 Words (Textbook)")
+    )
+  )
+  
+  # an array giving data to use on hours per page according to difficulty, purpose, and density
+  validationrate <- array(
+    data<-c(0.75, 1.5, 1, 2, 1.25, 2.5, 1.5, 3, 2, 4, 2.5, 5, 3, 6, 4, 8, 5, 10),
+    dim=c(2,3,3),
+    dimnames = list(c("250 Words (D-Spaced)", "500 Words (S-Spaced)"),
+                    c("No Drafting", "Minimal Drafting", "Extensive Drafting"),
+                    c("Reflection; Narrative", "Argument", "Research")
+    )
+  )
+  
   
 })
